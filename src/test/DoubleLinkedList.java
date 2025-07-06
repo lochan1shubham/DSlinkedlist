@@ -18,7 +18,6 @@ public class DoubleLinkedList {
 
 		static Node head = null;
 		static Node last = null;
-		static Node current = null;
 		
 		public static boolean isEmpty() {
 			return head == null;
