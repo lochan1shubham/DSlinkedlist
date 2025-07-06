@@ -26,7 +26,7 @@ public class AmazonTest {
 		int efficiencyInitial = calculateEfficiency(list);
 		System.out.println("efficiencyInitial::"+efficiencyInitial);
 		for(int i=0; i<list.size(); i++) {
-			List tempList = new ArrayList<Integer>(list);
+			List<Integer> tempList = new ArrayList<Integer>(list);
 			tempList.remove(i);
 			
 			//System.out.println("efficiencyInitialRemoved::"+calculateEfficiency(tempList));
