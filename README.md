@@ -1,1 +1,3 @@
 # DSlinkedlist
+# Stack
+#Queue
