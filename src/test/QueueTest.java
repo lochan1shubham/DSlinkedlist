@@ -1,7 +1,6 @@
 package test;
 
 public class QueueTest {
-	
 	static int front = 0;
 	static int rear = -1;
 	static final int MAX = 5;
