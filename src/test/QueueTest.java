@@ -14,7 +14,8 @@ public class QueueTest {
 		return rear < front;
 	}
 	
-	public static void insert(int a) {
+	// INsert operation in queue is called Enqueue
+	public static void enqueue(int a) { 
 		if(!isFull()) {
 			queue[++rear] = a;
 		}
@@ -30,7 +31,8 @@ public class QueueTest {
 		}
 	}
 	
-	public static void remove() {
+	// Remove operation in queue is called Dequeue
+	public static void dequeue() {
 		while(!isEmpty()) {
 			System.out.println("Item removed::"+queue[front++]);
 			
@@ -42,17 +44,17 @@ public class QueueTest {
 	public static void main(String[] args) {
 		System.out.println("Queue Test");
 		
-		insert(1);
-		insert(2);
-		insert(3);
-		insert(4);
-		insert(5);
-		insert(6);
+		enqueue(1);
+		enqueue(2);
+		enqueue(3);
+		enqueue(4);
+		enqueue(5);
+		enqueue(6);
 		printQueue();
-		remove();
+		dequeue();
 		printQueue();
-		insert(7);
-		insert(8);
+		enqueue(7);
+		enqueue(8);
 		printQueue();
 	}
 }
