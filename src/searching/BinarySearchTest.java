@@ -1,12 +1,14 @@
 package searching;
 
+import java.util.List;
+
 public class BinarySearchTest {
 	
 	public static void main(String[] args) {
 		System.out.println("Binary search test");
 		
 		BinaryTest binaryTest= new BinaryTest();
-		int index = binaryTest.findTarget(1);
+		int index = binaryTest.findTarget(2);
 		if(index>=0) {
 			System.out.println("Target found at "+index);
 		}else {
@@ -14,11 +16,10 @@ public class BinarySearchTest {
 		}
 		
 	}
-
 }
 
 class BinaryTest{
-	int [] list = {1,2,4,5,6,7,8,11};
+	int [] list = {1,2,4,5,6,7,8,11,9};
 	int upperIndex = list.length - 1;
 	int lowerIndex = 0;
 	int mid=-1;
